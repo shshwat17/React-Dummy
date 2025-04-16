@@ -1,0 +1,14 @@
+.chessboard {
+  display: grid;
+}
+.black {
+  background-color: black;
+  height: 60px;
+  width: 60px;
+}
+
+.white {
+  background-color: #fffdd0;
+  height: 60px;
+  width: 60px;
+}
