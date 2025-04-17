@@ -1,8 +1,8 @@
-.container{
-    display: inline-block;
+.container {
+  display: inline-block;
 }
-.fieldRow{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.fieldRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }

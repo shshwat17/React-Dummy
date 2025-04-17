@@ -12,5 +12,5 @@ root.render(
     <CustomErrorBoundary>
       <App />
     </CustomErrorBoundary>
-  </StrictMode>
+  </StrictMode>,
 );

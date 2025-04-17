@@ -6,42 +6,23 @@ import ClockTimer from "./clockTimer";
 import Chessboard from "./Chess/chess";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import ImageCarousel from "./ImageCaurosel/ImageCarousel";
-import FormFields from "./Form/FormFields";
+import { lazy, Suspense } from "react";
+import MutationObserver from "./JavascriptConcepts/MutationObserver";
+// import FormFields from "./Form/FormFields";
+
+const Form = lazy(() => import("./Form/FormFields"));
 
 const App = ({ name }) => {
-  const { count, increment, decrement } = useCounter();
+  // const { count, increment, decrement } = useCounter();
   const { data } = useFetch();
-  const images = [
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200",
-    "https://picsum.photos/200"
-  ];
 
   return (
     <div className="App">
-      {/* <ImageCarousel images={images} /> */}
-      <FormFields />
+      {/* <ImageCarousel /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Form />
+      </Suspense>
+      <MutationObserver />
       {/* Counter
       <h2>{count}</h2>
       <ProgressBar progress={count} />

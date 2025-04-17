@@ -16,7 +16,7 @@ const Chessboard = (props) => {
               setColorIndex([...colorIndex.reverse()]);
             }}
             className={getColorTiles}
-          />
+          />,
         );
       }
     }

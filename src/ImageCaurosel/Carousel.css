@@ -1,97 +1,98 @@
 .carousel-container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* Navigation Controls */
-  .carousel-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .nav-button {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .nav-button:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-  
-  .nav-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  /* Main Image Carousel */
-  .carousel-wrapper {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .carousel-track {
-    display: flex;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  
-  /* Centered Thumbnails */
-  .thumbnail-wrapper {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .thumbnail-container {
-    display: flex;
-    gap: 5px;
-    justify-content: flex-start;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    width: max-content; /* Ensures container stretches to fit all thumbnails */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding: 0.5rem;
-  }
-  
-  .thumbnail-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .thumbnail {
-    width: 60px;
-    height: 40px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    flex-shrink: 0;
-  }
-  
-  /* Selected thumbnail styling */
-  .thumbnail.selected {
-    border: 2px solid #007bff;
-    transform: scale(1.1);
-    border-radius: 10px; /* Apply consistent border radius */
-  }
-  
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Navigation Controls */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Main Image Carousel */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-image {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Centered Thumbnails */
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  width: max-content; /* Ensures container stretches to fit all thumbnails */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0.5rem;
+}
+
+.thumbnail-container::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Selected thumbnail styling */
+.thumbnail.selected {
+  border: 2px solid #007bff;
+  transform: scale(1.1);
+  border-radius: 10px; /* Apply consistent border radius */
+}
