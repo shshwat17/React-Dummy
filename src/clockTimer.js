@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 const ClockTimer = () => {
   const [time, setTime] = useState("00-00-00");

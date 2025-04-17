@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 class CustomErrorBoundary extends Component {
   constructor(props) {

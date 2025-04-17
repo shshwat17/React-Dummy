@@ -1,4 +1,4 @@
-import { useState, memo, useCallback } from "react";
+import React, { useState, memo, useCallback } from "react";
 import "./chess.css";
 
 const Chessboard = (props) => {
@@ -16,7 +16,7 @@ const Chessboard = (props) => {
               setColorIndex([...colorIndex.reverse()]);
             }}
             className={getColorTiles}
-          />,
+          />
         );
       }
     }

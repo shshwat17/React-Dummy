@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import React, { memo, useCallback, useState } from "react";
 import "./formFields.css";
 const FormFields = () => {
   const [fieldRow, setFieldRow] = useState([{ id: 1, val: "" }]);
@@ -14,8 +14,8 @@ const FormFields = () => {
   const handleChange = useCallback(({ event, id }) => {
     setFieldRow((prevItems) =>
       prevItems.map((item) =>
-        item.id === id ? { ...item, val: event.target.value } : item,
-      ),
+        item.id === id ? { ...item, val: event.target.value } : item
+      )
     );
   }, []);
   return (
@@ -35,4 +35,4 @@ const FormFields = () => {
     </div>
   );
 };
-export default FormFields;
+export default memo(FormFields);

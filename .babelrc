@@ -1,0 +1,33 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead" // Tells -> Have more than 0.25% market share globally,Are still alive (i.e., still supported and receiving updates).
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
+
+// @babel/preset-env
+// Purpose:
+// @babel/preset-env is a Babel preset that compiles modern JavaScript (ES6+) into backwards-compatible JavaScript that works in older browsers or environments.
+
+// It automatically determines the necessary transformations based on the environments (browsers, Node.js versions, etc.) you support.
+
+// How it works:
+// Transpiles modern JavaScript syntax (like async/await, arrow functions, const, let, class, etc.) into equivalent code that older browsers can understand.
+
+// The preset does this by analyzing your browser support requirements and adding the necessary polyfills or transformations.
+
+//  @babel/preset-react
+// Purpose:
+// @babel/preset-react is a Babel preset specifically designed to transpile JSX syntax into regular JavaScript. JSX is the syntax used by React to define components and elements (e.g., <div>Hello World</div>).
+
+// Without this preset, Babel would not know how to handle JSX syntax because it's not valid JavaScript by default.
+
+// How it works:
+
+
+// This preset converts JSX elements into the equivalent React.createElement calls. It also allows you to use other React-specific features, such as JSX fragments, the React import, and more.

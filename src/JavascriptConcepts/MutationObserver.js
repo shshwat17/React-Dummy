@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 // used to identify changes in the DOM like  adding/removing elements, changing attributes, etc.
 // event bubbling,event delegation, and event capturing can be identified using this
 const MutationObserverComponent = () => {
   useEffect(() => {
-    const callbackMu = function (mutationsList, observer) {
+    const callbackMu = function (mutationsList) {
       for (let mutation of mutationsList) {
         if (mutation.type === "childList") {
           console.log("A child node has been added or removed.");
