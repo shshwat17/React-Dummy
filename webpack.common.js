@@ -24,12 +24,13 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    fullySpecified: false
   },
   plugins: [
     // HtmlWebpackPlugin generates an HTML file and automatically injects your Webpack bundles (.js and .css) into it
     new HtmlWebpackPlugin({
       template: "./public/index.html",
-      favicon: "./public/favicon.png", // ✅ path to your favicon file
+      favicon: "./public/favicon.png", // path to your favicon file
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
