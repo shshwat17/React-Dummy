@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles.css";
 import WrappedComponentMiddleware from "./WrappedComp";
 import CustomRouteConfig from "./Routes/routes";
-import Home from "./Home/home";
+import Home from "./Components/Home/home";
 
 const App = () => {
   // const { count, increment, decrement } = useCounter();

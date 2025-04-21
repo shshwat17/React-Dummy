@@ -1,7 +1,7 @@
 import React, { Profiler } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import CustomErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import CustomErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
 import { IndexedDBProvider } from "./Context/IndexedDBContext";
 
 const rootElement = document.getElementById("root");

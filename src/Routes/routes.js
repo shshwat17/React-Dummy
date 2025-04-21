@@ -1,12 +1,18 @@
 import React, { lazy, Profiler } from "react";
-import ImageCarousel from "../ImageCaurosel/ImageCarousel";
-import MutationObserverComponent from "../JavascriptConcepts/MutationObserver";
-import ProgressBar from "../ProgressBar/ProgressBar";
-import ClockTimer from "../clockTimer";
-import Chessboard from "../Chess/chess";
-const Form = lazy(() => import("../Form/FormFields"));
+import ImageCarousel from "../Components/ImageCaurosel/ImageCarousel";
+import MutationObserverComponent from "../Components/JavascriptConcepts/MutationObserver";
+import ProgressBar from "../Components/ProgressBar/ProgressBar";
+import ClockTimer from "../Components/clockTimer";
+import Chessboard from "../Components/Chess/chess";
+import StickyNote from "../Components/StickyNotes/StickyNotes";
+const Form = lazy(() => import("../Components/Form/FormFields"));
 
 const CustomRouteConfig = [
+  {
+    key: 1,
+    element: <StickyNote />,
+    path: "/sticky-notes",
+  },
   {
     key: 2,
     element: <ImageCarousel />,
