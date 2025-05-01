@@ -117,7 +117,7 @@ const StickyNote = () => {
 
   return (
     <div style={{ padding: "1rem" }}>
-      <h2>📝 Sticky Notes (Editable & Non-Overlapping)</h2>
+      <h2> Sticky Notes (Editable & Non-Overlapping)</h2>
       <button onClick={addNote}>Add Note</button>
 
       <div className="draggableArea">

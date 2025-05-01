@@ -5,6 +5,7 @@ import ProgressBar from "../Components/ProgressBar/ProgressBar";
 import ClockTimer from "../Components/clockTimer";
 import Chessboard from "../Components/Chess/chess";
 import StickyNote from "../Components/StickyNotes/StickyNotes";
+import ReactForwardRef from "../Components/ForwardRef";
 const Form = lazy(() => import("../Components/Form/FormFields"));
 
 const CustomRouteConfig = [
@@ -57,6 +58,11 @@ const CustomRouteConfig = [
     key: 8,
     element: <div className="circle" />,
     path: "/half-circle",
+  },
+  {
+    key: 9,
+    element: <ReactForwardRef />,
+    path: "/ReactForwardRef",
   },
 ];
 export default CustomRouteConfig;
